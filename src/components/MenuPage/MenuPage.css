@@ -1,0 +1,40 @@
+.timer {
+    background: rgba(180, 67, 41, 0.7);
+    height: 40px;
+    width: 40px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    float: right;
+    position: absolute;
+    right: 30px;
+    top: 30px;
+}
+
+h1{
+    margin-top: 40px;
+}
+
+h2 {
+    font-size: 25px;
+}
+
+ul.menu {
+    margin-top: 20px;
+    list-style-type: none;
+    padding: 0 50px;
+}
+
+ul.menu li {
+    display: inline-block;
+    width: 100%;
+}
+
+span.dish-name {
+    float: left;
+}
+
+span.price {
+    float: right;
+}

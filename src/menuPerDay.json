@@ -1,0 +1,177 @@
+[
+    {
+        "day": "monday",
+        "menu": [
+            {
+                "name": "Hamburger",
+                "price": "$10"
+            },
+            {
+                "name": "Pizza",
+                "price": "$10"
+            },
+            {
+                "name": "Calzone",
+                "price": "$3"
+            },
+            {
+                "name": "Pepsi",
+                "price": "$1"
+            },
+            {
+                "name": "French Fries",
+                "price": "$5"
+            }
+        ]
+    },
+    {
+        "day": "tuesday",
+        "menu": [
+            {
+                "name": "Chicken",
+                "price": "$10"
+            },
+            {
+                "name": "Noodles",
+                "price": "$10"
+            },
+            {
+                "name": "Mac and cheese",
+                "price": "$6"
+            },
+            {
+                "name": "Pepsi",
+                "price": "$1"
+            },
+            {
+                "name": "Onion Rings",
+                "price": "$5"
+            }
+        ]
+    },
+    {
+        "day": "wednesday",
+        "menu":[
+            {
+                "name": "Tacos",
+                "price": "$5"
+            },
+            {
+                "name": "Fajitas",
+                "price": "$7"
+            },
+            {
+                "name": "Burrito",
+                "price": "$6"
+            },
+            {
+                "name": "Pepsi",
+                "price": "$1"
+            },
+            {
+                "name": "Salad",
+                "price": "$5"
+            }
+        ]
+    },
+    {
+        "day":"thrusday",
+        "menu": [
+            {
+                "name": "Pork",
+                "price": "$10"
+            },
+            {
+                "name": "Lasagna",
+                "price": "$10"
+            },
+            {
+                "name": "Hot dog",
+                "price": "$2"
+            },
+            {
+                "name": "Pepsi",
+                "price": "$1"
+            },
+            {
+                "name": "French Fries",
+                "price": "$5"
+            }
+        ]
+    },
+    {
+        "day": "friday",
+        "menu": [
+            {
+                "name": "Crepes",
+                "price": "$10"
+            },
+            {
+                "name": "Cheese sandwich",
+                "price": "$8"
+            },
+            {
+                "name": "Mac and cheese",
+                "price": "$6"
+            },
+            {
+                "name": "Calzone",
+                "price": "$3"
+            },
+            {
+                "name": "Onion Rings",
+                "price": "$5"
+            }
+        ]
+    },
+    {"day": "saturday",
+        "menu": [
+            {
+                "name": "Pizza",
+                "price": "$10"
+            },
+            {
+                "name": "Pasta",
+                "price": "$10"
+            },
+            {
+                "name": "Lasagna",
+                "price": "$6"
+            },
+            {
+                "name": "Pepsi",
+                "price": "$1"
+            },
+            {
+                "name": "Salad",
+                "price": "$3"
+            }
+        ]
+    },
+    {
+        "day": "sunday",
+        "menu": [
+            {
+                "name": "Hamburger",
+                "price": "$10"
+            },
+            {
+                "name": "Noodles",
+                "price": "$10"
+            },
+            {
+                "name": "Soup",
+                "price": "$3"
+            },
+            {
+                "name": "Pepsi",
+                "price": "$1"
+            },
+            {
+                "name": "French Fries",
+                "price": "$5"
+            }
+
+        ]
+    }
+]

@@ -1,0 +1,11 @@
+span.matched-words{
+    float: left;
+    color: #42a90f;
+    padding-left: 10px;
+    font-size: 20px;
+}
+
+p.congrats{
+    margin: 40px 0;
+    font-size: 22px;
+}
