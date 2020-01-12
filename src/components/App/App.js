@@ -13,6 +13,7 @@ import {
 const App = () => {
 	return (
 		<div className="App">
+			
 			<Router>
 				<Switch>
 					<Route exact path="/" component={MainPage}/>

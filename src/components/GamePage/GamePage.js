@@ -50,7 +50,7 @@ const GamePage = () => {
             <div>
                 <span className="matched-words">Matched words: {matchedWords}</span>
                 {timeout}
-                {/* <Timer/> */}
+                <Timer/>
             </div>
             {!winner ? <div>
                 <h1>Guess the menu of the day</h1> 

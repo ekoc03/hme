@@ -26,7 +26,10 @@ const MenuPage = () => {
             <ul className="menu">
                 {
                     currentMenu.map(dish => {
-                        return <li key={`${dish.name}-${dish.price}`}><span className="dish-name">{dish.name}</span> <span className="price">{dish.price}</span></li>
+                        return (<li key={`${dish.name}-${dish.price}`}>
+                            <span className="dish-name">{dish.name}</span> 
+                            <span className="price">{dish.price}</span>
+                        </li>)
                     })
                 }
                 
