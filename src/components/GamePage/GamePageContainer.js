@@ -1,6 +1,6 @@
 import { connect } from 'react-redux';
-import Timer from './Timer';
+import GamePage from './GamePage';
 
 const mapStateToProps = ({ timer: {selectedTimer} }) => ({ selectedTimer });
 
-export default connect(mapStateToProps)(Timer);
+export default connect(mapStateToProps)(GamePage);

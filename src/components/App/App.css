@@ -71,6 +71,20 @@ input[type=submit]:hover {
   opacity: 0.8;
 }
 
+.timer {
+  background: rgba(180, 67, 41, 0.7);
+  height: 40px;
+  width: 40px;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  float: right;
+  position: absolute;
+  right: 30px;
+  top: 30px;
+}
+
 .App {
   text-align: center;
   background: url('../../images/background.jpg');

@@ -6,6 +6,10 @@ span.matched-words{
 }
 
 p.congrats{
-    margin: 40px 0;
+    margin: 60px 0 30px 0;
     font-size: 22px;
+}
+
+.timer {
+    top: 20px;
 }

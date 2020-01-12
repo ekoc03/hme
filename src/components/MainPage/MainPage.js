@@ -6,13 +6,13 @@ const MainPage = () => {
     return (
         <div className="container">
             <h1>User type selection</h1>
-            <p>Choose what you want to do</p>
+            <p>Choose user rol</p>
                 <ul>
                     <li>
-                        <Link to="/menu" className="main-link">Go to game</Link>
+                        <Link to="/menu" className="main-link">Normal user</Link>
                     </li>
                     <li>
-                        <Link to="/setTimer" className="main-link">Go to admin page</Link>
+                        <Link to="/setTimer" className="main-link">Admin</Link>
                     </li>
                 </ul>
         </div>
