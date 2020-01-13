@@ -5,13 +5,15 @@ const GamePage = ({selectedTimer}) => {
     const [words, setWords] = useState([]);
     const [matchedWords, setMatchedWords] = useState([]);
     const [winner, setWinner] = useState(false);
-    const [timer, setTimeLeft] = useState(selectedTimer);
+    const [timer, setTimeLeft] = useState(selectedTimer || 30);
     const guessedWords = ['french', 'fries'];
 
     useEffect(() => {
         const interval = setInterval(() => {
             if (timer <= 0) {
                 setTimeLeft(0);
+            } else if (winner) {
+                clearInterval(interval);
             } else {
                 setTimeLeft(timer => timer - 1);
             }

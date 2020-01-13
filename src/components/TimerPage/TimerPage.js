@@ -1,10 +1,11 @@
-import React, {useState} from 'react';
+import React, { useState, useRef } from 'react';
 import './TimerPage.css';
 import TimerCheckbox from '../TimerCheckbox';
 import { Link } from "react-router-dom";
   
 const TimerPage = ({timers, addTimer, selectedTimer}) => { 
     const [timerValue, setTimerValue] = useState([]);
+    const inputEl = useRef(null);
 
     const onChange = (event) => {
         setTimerValue(event.target.value);
@@ -22,6 +23,8 @@ const TimerPage = ({timers, addTimer, selectedTimer}) => {
         if (timerValue <= 30 && timers.length +1 <= 6 && !timers.includes(timerValue)) {
             addTimer(timerValue);
         }
+
+        setTimerValue('');
     };
     
     return (
@@ -34,7 +37,7 @@ const TimerPage = ({timers, addTimer, selectedTimer}) => {
             
             <form onSubmit={handleSubmit}>
                 <div>
-                    <input type="number" onChange={onChange} value={timerValue}/>
+                    <input type="number" onChange={onChange} value={timerValue} ref={inputEl}/>
                 </div>
                 <input type="submit" value="Submit" />
             </form>
