@@ -9,7 +9,12 @@ const MenuPage = () => {
     let history = useHistory();
     const currentMenu = data.default.find(({day}) => day === moment().format('dddd').toLowerCase()).menu;
 
+    const shuffle = (array) => {
+        array.sort(() => Math.random() - 0.5);
+    }
+
     useEffect(() => {
+        shuffle(currentMenu);
         const interval = setInterval(() => {
             setSeconds(seconds => seconds - 1);
         }, 1000);
