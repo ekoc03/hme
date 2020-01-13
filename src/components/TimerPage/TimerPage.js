@@ -3,7 +3,7 @@ import './TimerPage.css';
 import TimerCheckbox from '../TimerCheckbox';
 import { Link } from "react-router-dom";
   
-const TimerPage = ({timers, addTimer}) => { 
+const TimerPage = ({timers, addTimer, selectedTimer}) => { 
     const [timerValue, setTimerValue] = useState([]);
 
     const onChange = (event) => {
@@ -38,7 +38,7 @@ const TimerPage = ({timers, addTimer}) => {
                 </div>
                 <input type="submit" value="Submit" />
             </form>
-            { <Link to="/" className="timer-link">Save selection</Link>}
+            { selectedTimer && <Link to="/" className="timer-link">Save selection</Link>}
         </div>
     )
 }

@@ -5,15 +5,37 @@ const GamePage = ({selectedTimer}) => {
     const [words, setWords] = useState([]);
     const [matchedWords, setMatchedWords] = useState([]);
     const [winner, setWinner] = useState(false);
-    const [timer, setTime] = useState(selectedTimer);
+    const [timer, setTimeLeft] = useState(selectedTimer);
     const guessedWords = ['french', 'fries'];
 
     useEffect(() => {
         const interval = setInterval(() => {
-            setTime(timer => timer - 1);
+            if (timer < 0) {
+                setTimeLeft(0);
+            } else {
+                setTimeLeft(timer => timer - 1);
+            }
         }, 1000);
         return () => clearInterval(interval);
     }, []);
+
+
+
+    // useEffect(() => {
+    //     setInterval(countDown, 1000);
+    // }, [])
+
+
+    // const countDown = () => {
+    //     const seconds = timer - 1;
+    //     setTimeLeft(seconds);
+        
+    //     if (seconds == 0) { 
+    //         setTimeLeft(0);
+    //       clearInterval(timer);
+          
+    //     }
+    // }
 
     const onChange = (event) => {
         setWords(event.target.value);
@@ -42,7 +64,7 @@ const GamePage = ({selectedTimer}) => {
                 <span className="matched-words">Matched words: {matchedWords}</span>
                 <span className="timer">{timer}</span>
             </div>
-            {!winner && timer !== 0 ? <div>
+            {!winner && timer > 0 ? <div>
                 <h1>Guess the menu of the day</h1> 
                 <p> 
                     They are served hot, either soft or crispy, and are generally eaten as part of 
