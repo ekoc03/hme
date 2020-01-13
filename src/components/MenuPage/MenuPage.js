@@ -6,21 +6,18 @@ import * as data from '../../menuPerDay.json';
 
 const MenuPage = () => {
     const [seconds, setSeconds] = useState(10);
+    const [currentMenu, setCurrentMenu] = useState([]);
     let history = useHistory();
-    const currentMenu = data.default.find(({day}) => day === moment().format('dddd').toLowerCase()).menu;
-
-    const shuffle = (array) => {
-        array.sort(() => Math.random() - 0.5);
-    }
 
     useEffect(() => {
-        shuffle(currentMenu);
+        const menu = data.default.find(({day}) => day === moment().format('dddd').toLowerCase()).menu.sort(() => Math.random() - 0.5);
+        setCurrentMenu(menu);
         const interval = setInterval(() => {
             setSeconds(seconds => seconds - 1);
         }, 1000);
         return () => clearInterval(interval);
-    }, []);
-    
+    }, []); 
+
     if (seconds === 0) history.push("/game");
 
     return (
