@@ -10,32 +10,14 @@ const GamePage = ({selectedTimer}) => {
 
     useEffect(() => {
         const interval = setInterval(() => {
-            if (timer < 0) {
+            if (timer <= 0) {
                 setTimeLeft(0);
             } else {
                 setTimeLeft(timer => timer - 1);
             }
         }, 1000);
         return () => clearInterval(interval);
-    }, []);
-
-
-
-    // useEffect(() => {
-    //     setInterval(countDown, 1000);
-    // }, [])
-
-
-    // const countDown = () => {
-    //     const seconds = timer - 1;
-    //     setTimeLeft(seconds);
-        
-    //     if (seconds == 0) { 
-    //         setTimeLeft(0);
-    //       clearInterval(timer);
-          
-    //     }
-    // }
+    }, [timer]);
 
     const onChange = (event) => {
         setWords(event.target.value);

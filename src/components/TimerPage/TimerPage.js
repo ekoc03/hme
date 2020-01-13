@@ -15,7 +15,7 @@ const TimerPage = ({timers, addTimer, selectedTimer}) => {
 
         if (timerValue > 30) alert('Maximum 30 seconds');
 
-        if (timers.length + 1 >= 6) alert('Maximum 6 timers');
+        if (timers.length >= 6) alert('Maximum 6 timers');
 
         if (timers.includes(timerValue)) alert('Already exists');
 
